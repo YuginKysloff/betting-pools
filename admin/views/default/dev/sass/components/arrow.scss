@@ -1,0 +1,16 @@
+.arrow-up{
+	&:before{
+		content: $fa-var-caret-up;
+		font: $FONT__AWESOME;
+		display: inline-block;
+		margin-right: 5px;
+	}
+}
+.arrow-down{
+	&:before{
+		content: $fa-var-caret-down;
+		font: $FONT__AWESOME;
+		display: inline-block;
+		margin-right: 5px;
+	}
+}

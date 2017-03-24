@@ -1,0 +1,67 @@
+.header {
+    height: 49px;
+    background: url('../img/heder_bg.png');
+}
+
+.logo {
+    float: left;
+    max-height: 49px;
+}
+
+.header__right-bar {
+    float: right;
+    margin-right: 25px;
+}
+
+.right-bar__user {
+    color: #ffffff;
+    &:before {
+        content: $fa-var-user;
+        display: inline-block;
+        margin-right: 12px;
+        font: $FONT__AWESOME;
+    }
+}
+
+.right-bar__url {
+    display: none;
+    height: 31px;
+    margin-left: 22px;
+    padding-right: 18px;
+    text-align: left;
+    line-height: 26px;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #303030, #3d3d3d);
+    @include bp (542px) {
+    	display: inline-block;
+    }
+}
+
+.right-bar__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #ccc;
+    &:before {
+        content: '';
+        display: inline-block;
+        margin-right: 12px;
+        margin-left: 2px;
+        vertical-align: middle;
+        @include sprite ($right-bar_url);
+    }
+    &:hover{
+        color: #fff;
+    }
+}
+
+.right-bar__exit {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #bfc9cf;
+    margin-left: 10px;
+
+    &:hover{
+        color: (#bfc9cf + 30%);
+    }
+}

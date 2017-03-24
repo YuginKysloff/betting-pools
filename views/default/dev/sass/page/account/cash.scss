@@ -1,0 +1,40 @@
+.cash{
+	position: relative;
+	display: inline-block;
+	width: 351px;
+	height: 198px;
+	padding: 0 79px;
+	background:transparent url('../img/general-statistics_item.png') left top no-repeat;
+}
+
+.cash__title{
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 27px;
+    text-transform: uppercase;
+}
+
+.cash__value{
+	font-size: 20px;
+	margin-top: 35px;
+}
+
+.cash__icon{
+	display: inline-block;
+	position: absolute;
+	bottom: 39px;
+	left: 35px;
+
+	&--payeer{
+		@include sprite ($payeer);
+	}
+
+	&--advcash{
+		@include sprite ($advcash);
+	}
+
+	&--pm{
+		@include sprite ($pm);
+	}
+}

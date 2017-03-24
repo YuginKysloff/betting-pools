@@ -1,0 +1,28 @@
+.footer{
+	display: flex;
+	@include container;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+}
+
+.footer__img{
+	vertical-align: middle;
+}
+
+.footer__skype-link,
+.footer__mail-link{
+	color: $red;
+	text-decoration: none;
+}
+
+.footer__skype{
+	text-decoration: none;
+
+	&:before{
+		content: '';
+		display: inline-block;
+		margin-right: 4px;
+		@include fa ($fa-skype);
+	}
+}

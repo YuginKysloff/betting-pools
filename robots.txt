@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /backup/
+Disallow: /cgi-bin/
+Disallow: /controllers/
+Disallow: /core/
+Disallow: /cron/
+Disallow: /json/
+Disallow: /lang/
+Disallow: /lib/
+Disallow: /models/
+Disallow: /plugins/
+Disallow: /txt/

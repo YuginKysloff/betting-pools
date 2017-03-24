@@ -1,0 +1,27 @@
+.g-table{
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	max-width: 100%;
+
+	&--payout thead th:nth-of-type(4){
+		width: 200px;
+	}
+
+	time{
+		color: $grey;
+	}
+}
+
+.g-table thead th{
+	font-size: 18px;
+	height: 51px;
+	border-bottom: 1px solid $red;
+	padding-left: 10px;
+}
+
+.g-table tbody td{
+	height: 51px;
+	border-bottom: 1px solid #d7d7d7;
+	padding-left: 10px;
+}

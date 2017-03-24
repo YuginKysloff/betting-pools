@@ -1,0 +1,48 @@
+.refelas__table{
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.refelas__table-th{
+
+	&--login{
+		width: 150px;
+	}
+
+	&--date{
+		width: 150px;
+	}
+}
+
+.refelas__table-tr{
+	height: 57px;
+	border-bottom: 1px solid #d7d7d7;
+
+	&:first-of-type{
+		border-bottom: 1px solid $red;
+	}
+}
+
+.refelas__table-sub-row{
+	color: #8d8d8d;
+	display: block;
+	font-size: 13px;
+	max-width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	&--red{
+		color: $red;
+	}
+}
+
+.refelas__table-td .g-currency-usd{
+	display: inline-block;
+	margin-right: 15px;
+}
+.refelas__table-td .g-currency-rub{
+	display: inline-block;
+	margin-left: 15px;
+}

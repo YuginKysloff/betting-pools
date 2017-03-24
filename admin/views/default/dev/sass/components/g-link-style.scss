@@ -1,0 +1,75 @@
+.g-link{
+	// word-wrap: break-word;
+	text-overflow: ellipsis;
+
+}
+
+.g-link__usr{
+	text-decoration: none;
+	color: #6ba3e7;
+	cursor: pointer;
+	display: inline-block;
+	 &:hover{
+		color: (#6ba3e7 + 40%);
+	}
+}
+
+.g-link__edit{
+	text-decoration: none;
+	cursor: pointer;
+	color: #d9a005;
+	display: inline-block;
+	&:hover{
+		color: (#d9a005  + 40%);
+	}
+}
+
+.g-link__confirm{
+	text-decoration: none;
+	cursor: pointer;
+	color: #458b16 ;
+	display: inline-block;
+	&:hover{
+		color: (#458b16   + 40%);
+	}
+}
+
+.g-link__to-refuse{
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	color: #d90505;
+	&:hover{
+		color: (#d90505  + 40%);
+	}
+}
+
+.g-link__green{
+	text-decoration: none;
+	cursor: pointer;
+	color: #458b16 ;
+	display: inline-block;
+	&:hover{
+		color: (#458b16   + 40%);
+	}
+}
+
+.g-link__red{
+	text-decoration: none;
+	cursor: pointer;
+	color: #d90505;
+	display: inline-block;
+	&:hover{
+		color: (#d90505  + 40%);
+	}
+}
+
+.g-link__orange{
+	text-decoration: none;
+	cursor: pointer;
+	color: #d9a005;
+	display: inline-block;
+	&:hover{
+		color: (#d9a005  + 40%);
+	}
+}

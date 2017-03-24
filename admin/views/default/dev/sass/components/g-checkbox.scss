@@ -1,0 +1,36 @@
+.g-checkbox{
+	display: block;
+	text-align: left;
+	cursor: pointer;
+	color: #666;
+
+	.g-checkbox__title{
+		display: inline-block;
+
+		&:before{
+			content: '';
+			display: inline-block;
+			@include sprite ($login_checkbox-before);
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+	}
+
+	&>input{
+		display: none;
+
+		&:checked ~ .g-checkbox__title{
+			&:before{
+				content: '';
+				display: inline-block;
+				@include sprite ($login_checkbox-after);
+			}	
+		}
+	}
+
+	&.login{
+		width: 250px;
+		margin: 10px auto;
+	}
+
+}

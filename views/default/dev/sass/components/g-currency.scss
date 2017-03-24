@@ -1,0 +1,71 @@
+.g-currency-usd,
+.g-currency-rub{
+	font-size: 18px;
+
+	&:before{
+		content: '';
+		display: inline-block;
+	}
+
+	&--trigger{
+		font-size: 23px;
+		color: #a41708;
+		text-shadow: 0 1px 1px #f78972;
+		&:before{
+			@include fa ($fa-usd,#a41708,23px);
+		}
+	}
+}
+.g-currency-usd{
+	&:before{
+		@include fa ($fa-usd,$red);
+	}
+	&--detalied-statistics{
+		font-size: 22px;
+		color: $red;
+		&:before{
+			@include fa ($fa-usd,#000,23px);
+		}
+	}
+
+	&--pools{
+		font-weight: bold;
+		font-size: 25px;
+		color: $red;
+		&:before{
+			@include fa ($fa-usd,$red,25px);
+		}
+	}
+	&--ref{
+		&:before{
+			@include fa ($fa-usd,#fff);
+		}
+	}
+}
+.g-currency-rub{
+	&:before{
+		@include fa ($fa-rub,$red);
+	}
+
+	&--detalied-statistics{
+		font-size: 22px;
+		color: $red;
+		&:before{
+			@include fa ($fa-rub,#000,23px);
+		}
+	}
+
+	&--pools{
+		font-weight: bold;
+		font-size: 25px;
+		color: $red;
+		&:before{
+			@include fa ($fa-rub,$red,25px);
+		}
+	}
+	&--ref{
+		&:before{
+			@include fa ($fa-rub,#fff);
+		}
+	}
+}

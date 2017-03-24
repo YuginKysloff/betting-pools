@@ -1,0 +1,17 @@
+.content{
+	float: right;
+	width: 100%;
+	padding: 20px 15px 70px 15px;
+	max-width: 1920px;
+	margin: 0 auto;
+	transition: width 1s;
+	@include bp (md) {
+		width: calc(100% - 98px);	
+		min-height: 1374px;
+	}
+
+	@include bp (1950px) {
+		float: initial;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,31 @@
+.statistics-table{
+	min-width: 600px;
+	min-height: 1015px;
+
+	tbody tr:nth-of-type(2n){
+		background-color: #fff;
+	}
+
+	tbody tr:nth-of-type(8n),
+	tbody tr:nth-of-type(8n-1),
+	tbody tr:nth-of-type(8n-2),
+	tbody tr:nth-of-type(8n-3){
+		background-color: #eaedf3;
+	}
+
+	tbody tr:last-of-type{
+		background: #fff;
+	}
+}
+
+.statistics-table__wrap{
+	width: 100%;
+	max-width: 1200px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.4);
+	overflow-x: auto;
+	margin: 0 auto 20px auto;
+
+	@include bp (1780px) {
+		float: left;
+	}
+}

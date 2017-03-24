@@ -1,0 +1,19 @@
+.log-table__wrap{
+	overflow-x: auto;
+	width: 100%;
+	overflow-y: hidden;
+}
+
+.log-table{
+	min-width: 861px;
+}
+
+.log-table__comments{
+	width: 36%;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.log__input{
+	width: 20% !important;
+}

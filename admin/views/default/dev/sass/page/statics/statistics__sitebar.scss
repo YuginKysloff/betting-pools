@@ -1,0 +1,10 @@
+.statistics__sitebar{
+	@include clear;
+	max-width: 934px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	
+	@include bp (wlg) {
+		margin-left: 140px;
+	}
+}

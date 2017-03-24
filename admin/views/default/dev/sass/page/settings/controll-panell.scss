@@ -1,0 +1,155 @@
+.controll-panel{
+	background:#fff;
+	padding: 64px 10px 0px;
+	position: relative;
+	@include clear;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.controll-panel__head{
+	padding-top: 9px;
+    height: 56px;
+    max-height: 56px;
+    background: linear-gradient(to bottom, #aeaeae, #6f6f6f);
+    color: #fff;
+    text-shadow: 0px 2px 2px #444;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 9px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.controll-panel__item{
+	width: 400px;
+	min-height: 51px;
+	background: #eee;
+	border: 1px solid #d6d6d6;
+	font-family: verdana,arial;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+	padding-left: 6px;
+	padding-right: 6px;
+	float: left;
+	display: inline-block;
+	text-align: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	max-width: 100%;
+	overflow: hidden;
+
+	&--textarea{
+		height: 51px;
+	}
+}
+
+.controll-panel__title{
+	color: #404040;
+	font-size: 14px;
+	display: block;
+	padding-top: 7px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+}
+
+.controll-panel__description{
+	color: #aaa;
+	font-size: 12px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+}
+
+.controll-panel__checkbox-hide{
+	display: none;
+}
+
+.controll-panel__checkbox{
+	display: block;
+	width: 84px;
+	background: linear-gradient(to bottom, #545454, #666);
+	float: right;
+	margin-top: 7px;
+	margin-right: 4px;
+	box-shadow: inset 0 0 10px 5px rgba(0,0,0,.2);
+	border-radius: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255,255,255,.55);
+	line-height: 36px;
+	font-weight: bold;
+	font-size: 14px;
+	position: relative;
+	cursor: pointer;
+
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 1px;
+		left: 0px;
+		@include sprite ($cp_checkbox);
+		transition: left .3s;
+		box-shadow: 0 4px 14px rgba(0,0,0,.2);
+	}
+}
+
+.controll-panel__checkbox-off{
+	margin-left: 6px;
+}
+
+.controll-panel__checkbox-hide:checked ~ .controll-panel__checkbox{
+	background: linear-gradient(to bottom, #3999e0, #4ba8ee);
+	color: #0d4fa5;
+	&:before{
+		left: 48px;
+	}
+}
+
+.controll-panel__checkbox-hide:checked ~ .controll-panel__checkbox .controll-panel__checkbox-off{
+	visibility: hidden;
+}
+
+.controll-panel__input{
+	max-width: 107px;
+	float: right;
+	margin: 0;
+	margin-top: 3px;
+	// margin-right: 3px;
+}
+
+.controll-panel__textarea{
+	resize: none;
+	min-height: 150px;
+
+	max-width: 100%;
+	width: 100%;
+    padding: 10px;
+    border: solid 1px #E5E5E5;
+    outline: none;
+    color: #000;
+    background: linear-gradient(to bottom, #fff, #eee 1px, #fff 25px);
+    box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+    transition: box-shadow .4s;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.controll-panel__button-wrap{
+	float: left;
+	width: 100%;
+	margin: 10px 0;
+
+	&--autoreg{
+		margin-top: 0;
+	}
+}
+
+[type="file"]{
+	display: none;
+}

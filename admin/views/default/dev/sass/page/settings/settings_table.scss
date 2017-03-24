@@ -1,0 +1,71 @@
+.settings-table__wrap{
+	width: 100%;
+	overflow-x: auto;
+}
+
+.settings-table{
+	min-width: 600px;
+}
+
+.settings-table tbody tr{
+	&:nth-of-type(2n){
+		background: #fff;
+	}
+}
+
+.settings-table__main{
+	width: 40%;
+}
+
+.settings-table__sort{
+	width: 95px;
+}
+
+.settings-table .g-input{
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.settings-table__edit,
+.settings-table__del{
+	width: 50px;
+	text-align: center;
+}
+
+.settings-table__edit i{
+	&:hover{
+		color: (#458b16 - 70%);
+	}
+}
+.settings-table__del i{
+	&:hover{
+		color: (#d90505 - 70%);
+	}
+}
+
+.settings-table tr{
+	.g-input input{
+		padding-left: 5px;
+	}
+	&.setting__gear{
+
+		&> td:first-of-type .g-input{
+			// padding-left: 37px;
+			position: relative;
+			&:before{
+				content: '';
+				display: inline-block;
+				position: absolute;
+				top: 13px;
+				left: -17px;
+				width: 16px;
+	    		height: 16px;
+				background: url('../img/gear.png');
+				background-size: contain;
+			}
+		}
+	}
+
+}

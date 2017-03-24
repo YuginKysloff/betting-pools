@@ -1,0 +1,73 @@
+.deposit__item{
+	@include clear;
+
+	--pools-width: 335px;
+}
+
+.deposit__all{
+	width: 522px;
+	height: 297px;
+	background:transparent url('../img/deposit_info.png') left top no-repeat;
+	margin: 0 auto;
+	padding: 124px 0 0 0;
+
+	span{
+		float: right;
+	}
+}
+
+.deposit__all-row{
+	line-height: 30px;
+	margin: 0 auto;
+	width: 53%;
+}
+
+.deposit__pools{
+	width: var(--pools-width);
+	height: 335px;
+	border: 2px dashed $red;
+	float: right;
+	margin-top: 37px;
+	text-align: center;
+	padding-top: 41px;
+}
+
+.deposit__pools-item{
+	font-size: 18px;
+	margin-bottom: 7px;
+	&:nth-of-type(1){
+		font-size: 50px;
+	}
+
+	&:nth-of-type(5){
+		font-size: 35px;
+	}
+
+}
+.deposit__table{
+	float: left;
+	width: calc(98% - var(--pools-width));
+}
+
+.deposit__row{
+	height: 51px;
+	border-bottom: 1px solid #d7d7d7;
+}
+
+.deposit__cell{
+	padding-left: 10px;
+	width: 50%;
+	float: left;
+	line-height: 51px;
+
+	&:first-of-type{
+		width: 65%;
+	}
+	&:last-of-type{
+		width: 35%;
+	}
+}
+
+.deposit__bar{
+	margin: 20px 0;
+}

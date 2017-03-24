@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 170 170" preserveAspectRatio="none" style="width:200; height:200; top:0; left:0; ">
+	<circle class="green-halo" fill="none" transform="rotate(-90,100,100)"  style="
+	cx: 23.3%;
+    cy: 44%;
+    r: 80;
+    stroke-width: 13px;
+    stroke: rgba(83,152,255,0.6);
+    stroke-dasharray: 168%, 2000;
+    transition: stroke-dasharray 2s;"/>
+</svg>

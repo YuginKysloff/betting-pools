@@ -1,0 +1,82 @@
+.g-input{
+	height: 41px;
+	margin: 10px 0;
+	position: relative;
+
+
+	&>input{
+		width: 100%;
+		line-height: 41px;
+		height: 100%;
+		padding-left: 15px;
+		border: solid 1px #E5E5E5;;
+		outline: none;
+		color: #000;
+		background: linear-gradient(to bottom,  #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0,0,0, 0.1) 0px 0px  8px;
+		transition: box-shadow .4s;
+		&::placeholder{
+			color: #ccc;
+		}
+
+		&:hover{
+			// border-color: #C9C9C9;
+		}
+		&:focus{
+			box-shadow: 0 0 3px #6699FF;
+			// outline: 1px groove #6699FF;
+		}
+	}
+
+	&.login{
+		width: 250px;
+		margin: 20px auto 20px auto;
+	}
+
+	&[data-validation-error]{
+		border: 1px solid #a04c4c;
+
+		&:after{
+			content: attr(data-validation-error);
+			display: block;
+			position: absolute;
+			height: 2px;
+			bottom: -2px;
+			font-size: 12px;
+			left: 0px;
+			width: 100%;
+			text-align: center;
+			color: #cf0000;
+		}
+		&:before{
+		    background: linear-gradient(to bottom, #ccc, transparent);
+		}
+		&>input{
+			background: #f4dede;
+		}
+	}
+}
+
+.show-password{
+	position: absolute;
+	top: 0px;
+	right: 12px;
+	line-height: 41px;
+	color: #666666;
+	cursor: pointer;
+
+	&:hover{
+		color: #333;
+	}
+}
+
+.g-input.settings__disabled{
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	&>input{
+		background: transparent;
+		box-shadow: none;
+		border: 1px solid transparent;
+	}
+}

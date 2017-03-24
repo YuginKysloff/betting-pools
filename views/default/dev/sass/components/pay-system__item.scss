@@ -1,0 +1,117 @@
+.pay-system{
+	padding-top: 51px;
+	@include clear;
+	display: flex;
+	justify-content: space-between;
+}
+
+.pay-system__item{
+	width: 250px;
+	height: 245px;
+	overflow: hidden;
+	transform: rotate(40deg);
+	padding-top: 27px;
+	position: relative;
+	display: inline-block;
+
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 1px;
+		border-radius: 50%;
+		box-shadow: 8px 0 6px #000;
+		z-index: 2;
+		margin-left: -6px;
+	}
+
+	&.active > .pay-system__title,
+	&.js-active > .pay-system__title{
+		background: linear-gradient(to bottom, #be5c66, #ef6d6f);
+		color: #fff;
+		&:after{
+			color: #f7b2ab;
+		}
+	}
+}
+
+.pay-system__title{
+	background: linear-gradient(to bottom, #c0c2c4, #e3e4e5);
+	border-radius: 50%;
+	width: 180px;
+	height: 180px;
+	margin-left: -34px;
+	box-shadow: 0 21px 42px rgba(0,0,0,.1);
+	transform: rotate(-40deg);
+	padding-top: 69px;
+	cursor: pointer;
+	text-align: center;
+	transition: background .4s;
+	&:before{
+		content: '';
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 22px;
+	}
+
+	&:after{
+		content: '. . .';
+		display: block;
+		position: absolute;
+		top: 62px;
+    	left: 63px;
+    	font-size: 47px;
+		color: #c2c2c2;
+	}
+
+	&:hover{
+		background: linear-gradient(to bottom, #be5c66, #ef6d6f);
+		color: #fff;
+		&:after{
+			color: #f7b2ab;
+		}
+	}
+
+	&--payeer{
+		
+		&:before{
+			@include sprite ($logo_payeer);
+		}
+
+		&:hover{
+			&:before{
+				@include sprite ($logo_payeer-hover);
+			}
+		}
+	}
+
+	&--pm{
+		
+		&:before{
+			@include sprite ($logo_pm);
+		}
+
+		&:hover{
+			&:before{
+				@include sprite ($logo_pm-hover);
+			}
+		}
+	}
+
+	&--advcash{
+		
+		&:before{
+			@include sprite ($logo_advcash);
+		}
+
+		&:hover{
+			&:before{
+				@include sprite ($logo_advcash-hover);
+			}
+		}
+	}
+
+}

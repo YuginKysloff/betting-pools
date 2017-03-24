@@ -1,0 +1,154 @@
+.user-menu{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.user-menu__icon{
+	position: absolute;
+	cursor: pointer;
+	z-index: 2;
+	top: -6px;
+    left: -4px;
+	&:before{
+		content: '';
+		display: inline-block;
+		@include fa ($fa-user,#000,25px);
+	}
+
+	&:hover{
+		&:before{
+			@include fa ($fa-user,#ec5144,25px);
+		}
+	}
+}
+
+.user-menu__sub-menu{
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	top: -41px;
+    left: -54px;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity .5s;
+
+	&.js-active,
+	&.active{
+		opacity: 1;
+	}
+}
+
+.user-menu__item{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 29px;
+	height: 29px;
+	display: inline-block;
+	border: 1px solid #2b2b2b;
+	transform: rotate(45deg);
+	transition: background .3s, color .3s;
+	
+	&--ru{
+		top: -14px;
+    	left: 35px;
+		cursor: pointer;
+		&:before{
+			content: 'ru';
+			display: block;
+			position: absolute;
+			text-transform: uppercase;
+			margin-left: 5px;
+			margin-top: 5px;
+			top: 0px;
+			left: 0px;
+			transform: rotate(-45deg);
+		}
+		&:hover{
+			background: #2b2b2b;
+			&:before{
+				color: #fff;
+			}
+		}
+	}
+
+	&--en{
+		top: 10px;
+    	left: 10px;
+		cursor: pointer;
+		&:before{
+			content: 'en';
+			display: block;
+			position: absolute;
+			text-transform: uppercase;
+			margin-left: 5px;
+			margin-top: 5px;
+			top: 0px;
+			left: 0px;
+			transform: rotate(-45deg);
+		}
+		&:hover{
+			background: #2b2b2b;
+			&:before{
+				color: #fff;
+			}
+		}
+	}
+
+	&--red{
+		top: 34px;
+    	left: -14px;
+		background: #ec5144;
+		border-color: #ec5144;
+	}
+
+	&--signup{
+		top: 59px;
+    	left: 10px;
+		cursor: pointer;
+		&:before{
+			content: '';
+			@include fa ($fa-sign-out);
+			display: inline-block;
+			position: absolute;
+			top: 0px;
+			transform: rotate(-45deg);
+			left: 0px;
+			margin-left: 5px;
+			margin-top: 5px;
+		}
+
+		&:hover{
+			background: #2b2b2b;
+			&:before{
+				@include fa ($fa-sign-out,#fff);
+			}
+		}
+	}
+
+	&--add-user{
+		top: 83px;
+    	left: 35px;
+		cursor: pointer;
+		&:before{
+			content: '';
+			@include fa ($fa-user-plus);
+			display: inline-block;
+			position: absolute;
+			top: 0px;
+			transform: rotate(-45deg);
+			left: 0px;
+			margin-left: 5px;
+			margin-top: 4px;
+		}
+
+		&:hover{
+			background: #2b2b2b;
+			&:before{
+				@include fa ($fa-user-plus, #fff);
+			}
+		}
+	}
+}

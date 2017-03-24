@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+//Переменные
+@import 'variables.scss';
+
+//Миксины
+@import 'mixin/*.scss';
+
+//Стили подключаемых плагинов
+@import '../plugin/temp/**/*.scss';
+
+//Переменные и глобальные стили, типографика
+@import 'base/*.scss';
+
+//Выгружаем глобальные компоненты
+@import 'components/**/*.scss';
+
+//Выгружаем стили страниц
+@import 'page/**/*.scss';

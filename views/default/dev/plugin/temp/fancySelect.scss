@@ -1,0 +1,124 @@
+.fancy-select {
+	position: relative;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #46565D;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.fancy-select.disabled {
+	opacity: 0.5;
+}
+
+.fancy-select select:focus + .trigger {
+	box-shadow: 0 0 0 2px #4B5468;
+}
+
+.fancy-select select:focus + .trigger.open {
+	box-shadow: none;
+}
+
+.fancy-select .trigger {
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 10px 24px 9px 9px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	background: #f9f9f9;
+	border: 1px solid #dee1e2;
+	color: #4B5468;
+	width: 200px;
+	height: 42px;
+
+	transition: all 240ms ease-out;
+}
+
+.fancy-select .trigger:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 9px;
+	transition: transform .4s;
+	@include fa ($fa-caret-down, grey);
+}
+
+.fancy-select .trigger.open {
+	background: #f9f9f9;
+	border: 1px solid #dee1e2;
+	color: #7A8498;
+	box-shadow: none;
+
+	&:after{
+		transform:  translateY(-50%) rotate(-180deg)
+	}
+}
+
+.fancy-select .trigger.open:after {
+	border-top-color: #7A8498;
+}
+
+.fancy-select .options {
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 50;
+	max-height: 200px;
+	overflow: auto;
+	background: #fff;
+	border: 1px solid #dee1e2;
+	border-radius: 4px;
+	min-width: 200px;
+	margin: 0;
+	padding: 0;
+	transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+.fancy-select .options.open {
+	visibility: visible;
+	top: 50px;
+	opacity: 1;
+	transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+.fancy-select .options.overflowing {
+	top: auto;
+	bottom: 40px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+.fancy-select .options.overflowing.open {
+	top: auto;
+	bottom: 50px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+.fancy-select .options li {
+	padding: 8px 12px;
+	color: #4B5468;
+	cursor: pointer;
+	height: 40px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	transition: all 150ms ease-out;
+}
+
+.fancy-select .options li.selected {
+	background: rgba(43,134,134,0.3);
+}
+
+.fancy-select .options li.hover {
+	background: #eee;
+}

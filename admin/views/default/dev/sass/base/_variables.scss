@@ -1,0 +1,37 @@
+//mappy-bp - Настройка media queries проэкта
+$breakpoints: ( 
+  'xs': 481px, 
+  'sm': 768px, 
+  'md': 992px, 
+  'lg': 1200px,
+  'wlg': 1680px,
+  'max': 1920px,
+);
+
+$container-xs: 471px;
+$container-sm: 750px;
+$container-md: 970px;
+$container-lg: 1170px;
+$container-wlg: 1680px;
+$container-max: 1920px;
+
+//Susy - Настройка Grid сетки проэкта
+$susy: (
+  columns: 12,
+  gutters: (0),
+  container: auto,
+  global-box-sizing: border-box
+);
+
+
+$MIN-WIDTH: 320px;
+
+$BASE__FONT: Segoe, arial, verdana;
+$BASE__FONT--LIGHT: Segoe-light, arial, verdana;
+$BASE__FONT--SEMMI-BOLD: Segoe-semi, arial, verdana;
+$BASE__FONT--BOLD: Segoe-bold, arial, verdana;
+
+$BASE__COLOR: #000;
+
+$FONT__AWESOME: 14px/1 FontAwesome;
+

@@ -1,0 +1,16 @@
+.g-hr{
+	border: none;
+	border-top: 1px solid #959595;
+	position: relative;
+	margin: 50px 0;
+
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: -17px;
+		left: 50%;
+		transform: translateX(-50%);
+		@include sprite ($hr_img);
+	}
+}

@@ -1,0 +1,52 @@
+.referals__url{
+	color: $grey;
+}
+
+.referals__you-link{
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+
+.referals__advertising-material{
+	text-transform: uppercase;
+	color: $red;
+	display: inline-block;
+	border-bottom: 1px dashed $red;
+	float: right;
+	cursor: pointer;
+}
+
+.referals__info-block{
+	width: 589px;
+	height: 285px;
+	background:transparent url('../img/regerals_block.png') left top no-repeat;
+	margin: 30px auto 0 auto;
+	color: #fff;
+	padding: 43px 0 0 245px;
+}
+
+.referals__reset-url{
+	color: #f7b2ab;
+	display: inline-block;
+	margin-left: 25px;
+	cursor: pointer;
+	border-bottom: 1px solid #f7b2ab;
+
+	&:hover{
+		color: (#f7b2ab + 30%);
+	}
+}
+
+.referals__procent{
+	margin-top: 10px;
+	margin-bottom: 37px;
+}
+
+.referals__referal,
+.referals__income{
+	margin-left: 61px;
+}
+
+.referals__income{
+	margin-top: 13px;
+}

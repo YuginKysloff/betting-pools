@@ -1,0 +1,41 @@
+.g-togglebox .togglebox{
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 44px; 
+		height: 24px;
+		border-radius: 20px;
+		background: #002e5c;
+		transition: background .4s;
+	}
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		margin: 2px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #fff;
+		transition: left .4s;
+	}
+}
+.g-togglebox input:checked ~ .togglebox{
+	&:before{
+		background: #ddd;
+	}
+	&:after{
+		left: 20px;
+	}
+}
+.g-togglebox input{
+	display: none;
+}

@@ -1,0 +1,93 @@
+.view__index{
+	width:initial
+}
+
+.desctop__item{
+	width: 120px;
+	height: 120px;
+	background: url("../img/desktop-button.png") no-repeat left top / contain;
+	position: relative;
+	display: inline-block;
+	margin: 0 10px;
+	@include bp (600px) {
+		width: 160px;
+		height: 160px;
+	}
+	@include bp (880px) {
+		width: 265px;
+		height: 267px;
+	}	
+	&:hover{
+		i{
+			color: #5398ff;
+		}
+		.desctop__title{
+			color: #5398ff;
+		}
+	}
+}
+
+.desctop__circle{
+    max-width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	
+	svg{
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+	}
+    .green-halo{
+    	cx: 17.3%;
+	    cy: 50%;
+	    r: 90;
+	    stroke-width: 15px;
+	    stroke: rgba(83,152,255,0.6);
+	    stroke-dasharray: 0%, 2000;
+	    transition: stroke-dasharray 2s;
+    }
+}
+
+.desctop__item:hover .green-halo{
+	stroke-dasharray: 189%, 2000;
+}
+
+.desctop__icon{
+	position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #464646;
+    transition: color .4s;
+    @include bp (600px) {
+    	top: 43%;	
+    }
+    @include bp (880px) {
+    	font-size: 46px;
+    }
+}
+
+.desctop__title{
+	display: none;
+	position: absolute;
+	top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #464646;
+    text-transform: uppercase;
+    transition: color .4s;
+    text-shadow: 0 1px 0 #fff;
+
+    @include bp (600px) {
+    	display: block;
+    	top: 86px;
+    	font-size: 10px;
+    }
+    @include bp (md) {
+    	top: 140px;
+    	font-size: 14px;
+    }
+}

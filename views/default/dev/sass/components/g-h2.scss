@@ -1,0 +1,26 @@
+.g-h2{
+	font-size: 35px;
+	height: 44px;
+	position: relative;
+	display: block;
+	overflow: hidden;
+
+	&::first-letter{
+		color: #ec5144;
+	}
+}
+
+.g-h2__line{
+	position: relative;
+	&:after{
+		position: absolute;
+		content: '';
+		display: block;
+		position: absolute;
+		width: 1000%;
+		height: 2px;
+		background: #ec5144;
+		bottom: 0px;
+		left: 103%;
+	}
+}

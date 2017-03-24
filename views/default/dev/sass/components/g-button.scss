@@ -1,0 +1,27 @@
+.g-button{
+	display: inline-block;
+	line-height: 42px;
+	background: $red;
+	color: #fff;
+	max-width: 100%;
+	padding: 0 10px;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: none;
+	vertical-align: middle;
+	outline: none;
+
+	&:hover{
+		background: #ce3e37;
+	}
+
+	&--pull{
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	&--deposit{
+		margin-left: 114px;
+	}
+}

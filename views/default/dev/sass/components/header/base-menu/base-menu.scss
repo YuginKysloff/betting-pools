@@ -1,0 +1,19 @@
+.base-menu{
+	@include container;
+	position: relative;
+}
+.base-menu__link{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #242424;
+	padding-bottom: 9px;
+	font-family: $BASE__FONT--SEMIBOLD;
+	margin: 0 15px;
+	border-bottom: 2px solid transparent;
+
+	&:hover{
+		border-bottom: 2px solid #ec5144;
+	}
+}

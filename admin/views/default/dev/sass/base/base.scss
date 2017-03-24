@@ -1,0 +1,73 @@
+html,
+body {
+    font-size: 16px;
+    min-height: 100%;
+}
+
+body {
+    position: relative;
+    width: auto;
+    min-width: $MIN-WIDTH;
+    min-height: 1469px;
+    height: 100%;
+    text-align: center;
+    font-family: $BASE__FONT;
+    font-weight: normal;
+    color: $BASE__COLOR;
+    background-image: url('../img/bg.png');
+    @include clear;
+}
+
+@include border-box-sizing;
+
+.preloader{
+    display: none;
+}
+.g-preload {
+    width: 100px;
+    height: 15px;
+    background: url(../img/preload.gif) no-repeat;
+}
+
+.g-wait {
+    color: orange !important;
+}
+
+.g-success {
+    color: green !important;
+}
+
+.g-error {
+    color: red !important;
+}
+
+
+.g-grey {
+    color: #bdc3c7 !important;
+}
+
+.g-green{
+    color: #458b16 !important;
+}
+.g-red{
+    color: #d90505 !important;
+}
+.g-orange{
+    color: #d9a005 !important;
+}
+.g-blue{
+    color: #6ba3e7 !important;
+}
+
+
+.g-url{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+
+
+.g-hide {
+    display: none;
+}

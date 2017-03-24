@@ -1,0 +1,20 @@
+.fancy-select .trigger{
+	border: 1px solid $red;
+	border-radius: 0px;
+	color: #5a5a5a;
+	font-size: 16px;
+	background-color: transparent;
+	text-transform: none;
+
+	&:after{
+		@include fa ($fa-caret-down, #5a5a5a, 20px);
+	}
+}
+.fancy-select .trigger.open{
+	background-color: transparent;
+	border: 1px solid $red;
+}
+
+.fancy-select .options li.selected{
+	background: #f7b2ab;
+}

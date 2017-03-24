@@ -1,0 +1,117 @@
+// @include bounceIn(
+//     $duration: 1s,
+//     $count: 2,
+//     $delay: .2s,
+//     $function: ease, 
+//     $fill: both
+// );
+
+@import
+  "../node_modules/animateSCSS/animate.css/properties.scss";
+
+@import
+//attention-seekers
+  // "../node_modules/animateSCSS/animate.css/attention-seekers/bounce.scss",
+  // "../node_modules/animateSCSS/animate.css/attention-seekers/flash.scss",
+  // "../node_modules/animateSCSS/animate.css/attention-seekers/jello.scss",
+  // "../node_modules/animateSCSS/animate.css/attention-seekers/pulse.scss",
+  // "../node_modules/animateSCSS/animate.css/attention-seekers/rubberBand.scss",
+  // "../node_modules/animateSCSS/animate.css/attention-seekers/shake.scss",
+  // "../node_modules/animateSCSS/animate.css/attention-seekers/swing.scss",
+  // "../node_modules/animateSCSS/animate.css/attention-seekers/tada.scss",
+  // "../node_modules/animateSCSS/animate.css/attention-seekers/wobble.scss",
+
+//bouncing-entrances
+  // "../node_modules/animateSCSS/animate.css/bouncing-entrances/bounceIn.scss",
+  // "../node_modules/animateSCSS/animate.css/bouncing-entrances/bounceInDown.scss",
+  // "../node_modules/animateSCSS/animate.css/bouncing-entrances/bounceInLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/bouncing-entrances/bounceInRight.scss",
+  // "../node_modules/animateSCSS/animate.css/bouncing-entrances/bounceInUp.scss",
+
+//bouncing-exits
+  // "../node_modules/animateSCSS/animate.css/bouncing-exits/bounceOut.scss",
+  // "../node_modules/animateSCSS/animate.css/bouncing-exits/bounceOutDown.scss",
+  // "../node_modules/animateSCSS/animate.css/bouncing-exits/bounceOutLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/bouncing-exits/bounceOutRight.scss",
+  // "../node_modules/animateSCSS/animate.css/bouncing-exits/bounceOutUp.scss",
+
+//fading-entrances
+  // "../node_modules/animateSCSS/animate.css/fading-entrances/fadeIn.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-entrances/fadeInDown.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-entrances/fadeInDownBig.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-entrances/fadeInLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-entrances/fadeInLeftBig.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-entrances/fadeInRight.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-entrances/fadeInRightBig.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-entrances/fadeInUp.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-entrances/fadeInUpBig.scss",
+
+//fading-exits
+  // "../node_modules/animateSCSS/animate.css/fading-exits/fadeOut.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-exits/fadeOutDown.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-exits/fadeOutDownBig.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-exits/fadeOutLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-exits/fadeOutLeftBig.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-exits/fadeOutRight.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-exits/fadeOutRightBig.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-exits/fadeOutUp.scss",
+  // "../node_modules/animateSCSS/animate.css/fading-exits/fadeOutUpBig.scss",
+
+//flippers
+  // "../node_modules/animateSCSS/animate.css/flippers/flip.scss",
+  // "../node_modules/animateSCSS/animate.css/flippers/flipInX.scss",
+  //"../node_modules/animateSCSS/animate.css/flippers/flipInY.scss",
+  //"../node_modules/animateSCSS/animate.css/flippers/flipOutX.scss",
+  //"../node_modules/animateSCSS/animate.css/flippers/flipOutY.scss",
+
+//lightspeed
+  // "../node_modules/animateSCSS/animate.css/lightspeed/lightSpeedIn.scss",
+  // "../node_modules/animateSCSS/animate.css/lightspeed/lightSpeedOut.scss",
+
+//rotating-entrances
+  // "../node_modules/animateSCSS/animate.css/rotating-entrances/rotateIn.scss",
+  // "../node_modules/animateSCSS/animate.css/rotating-entrances/rotateInDownLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/rotating-entrances/rotateInDownRight.scss",
+  // "../node_modules/animateSCSS/animate.css/rotating-entrances/rotateInUpLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/rotating-entrances/rotateInUpRight.scss",
+
+//rotating-exits
+  // "../node_modules/animateSCSS/animate.css/rotating-exits/rotateOut.scss",
+  // "../node_modules/animateSCSS/animate.css/rotating-exits/rotateOutDownLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/rotating-exits/rotateOutDownRight.scss",
+  // "../node_modules/animateSCSS/animate.css/rotating-exits/rotateOutUpLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/rotating-exits/rotateOutUpRight.scss",
+
+//sliding-entrances
+  // "../node_modules/animateSCSS/animate.css/sliding-entrances/slideInDown.scss",
+  // "../node_modules/animateSCSS/animate.css/sliding-entrances/slideInLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/sliding-entrances/slideInRight.scss",
+  // "../node_modules/animateSCSS/animate.css/sliding-entrances/slideInUp.scss",
+
+//sliding-exits
+  // "../node_modules/animateSCSS/animate.css/sliding-exits/slideOutDown.scss",
+  // "../node_modules/animateSCSS/animate.css/sliding-exits/slideOutLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/sliding-exits/slideOutRight.scss",
+  // "../node_modules/animateSCSS/animate.css/sliding-exits/slideOutUp.scss",
+
+//specials
+  // "../node_modules/animateSCSS/animate.css/specials/hinge.scss",
+  // "../node_modules/animateSCSS/animate.css/specials/rollIn.scss",
+  // "../node_modules/animateSCSS/animate.css/specials/rollOut.scss",
+
+//zooming-entrances
+  // "../node_modules/animateSCSS/animate.css/zooming-entrances/zoomIn.scss",
+  // "../node_modules/animateSCSS/animate.css/zooming-entrances/zoomInDown.scss",
+  // "../node_modules/animateSCSS/animate.css/zooming-entrances/zoomInLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/zooming-entrances/zoomInRight.scss",
+  // "../node_modules/animateSCSS/animate.css/zooming-entrances/zoomInUp.scss",
+
+//zooming-exits
+  // "../node_modules/animateSCSS/animate.css/zooming-exits/zoomOut.scss",
+  // "../node_modules/animateSCSS/animate.css/zooming-exits/zoomOutDown.scss",
+  // "../node_modules/animateSCSS/animate.css/zooming-exits/zoomOutLeft.scss",
+  // "../node_modules/animateSCSS/animate.css/zooming-exits/zoomOutRight.scss",
+  // "../node_modules/animateSCSS/animate.css/zooming-exits/zoomOutUp.scss",
+
+
+"../node_modules/animateSCSS/animate.css/last.scss";

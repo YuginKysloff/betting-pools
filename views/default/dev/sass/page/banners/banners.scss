@@ -1,0 +1,43 @@
+.banners__title{
+	display: block;
+	font-size: 22px;
+}
+
+.banners__img{
+
+	&--728x90{
+		width: 728px;
+		height: 90px;
+	}
+
+	&--468x60{
+		width: 468px;
+		height: 60px;
+	}
+
+	&--200x300{
+		width: 200px;
+		height: 300px;
+	}
+
+	&--125x125{
+		width: 125px;
+		height: 125px;
+	}
+}
+.banners__row{
+	display: block;
+	margin: 10px 0;
+}
+
+.banners__url{
+	text-decoration: none;
+	color: $red;
+}
+
+.banners__code{
+	color: $red;
+	margin-bottom: 40px;
+	display: inline-block;
+}
+

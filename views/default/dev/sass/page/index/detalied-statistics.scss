@@ -1,0 +1,85 @@
+
+.detalied-statistics__payin{
+	float: left;
+}
+
+.detalied-statistics__payout{
+	float: right;
+}
+
+.detalied-statistics__item{
+	width: 504px;
+	height: 115px;
+	background:transparent url('../img/detalied_item.png') left top no-repeat;
+	padding: 18px 20px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.detalied-statistics__curryncy{
+	display: inline-block;
+	min-width: 90px;
+}
+.detalied-statistics__type{
+	font-size: 30px;
+	color: rgba(105,105,105,.25);
+	text-transform: uppercase;
+	width: 358px;
+	display: inline-block;
+	text-align: center;
+	padding-right: 30px;
+	box-sizing: border-box;
+	padding-right: 39px;
+	margin-bottom: 13px;
+}
+
+.detalied-statistics__username{
+	font-size: 18px;
+}
+.detalied-statistics__datetime{
+	font-size: 16px;
+	display: inline-block;
+	color: #5a5a5a;
+	width: 300px;
+	text-align: center;
+}
+
+.detalied-statistics__icon{
+	display: block;
+	position: absolute;
+	top: 43px;
+	right: 76px;
+
+	&--advcash{
+		@include sprite ($advcash);
+	}
+	&--payeer{
+		@include sprite ($payeer);
+	}
+	&--pm{
+		@include sprite ($pm);
+	}
+}
+
+.detalied-statistics__arrow{
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+	&:before{
+		content: '';
+		display: inline-block;
+		font-size: 25px;
+		color: #fff;
+	}
+
+	&--down{
+		&:before{
+			@include fa ($fa-level-up,#fff);
+		}
+	}
+	&--up{
+		&:before{
+			@include fa ($fa-level-down,#fff);
+		}
+	}
+}

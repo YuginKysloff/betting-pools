@@ -1,0 +1,106 @@
+.cont{
+	background: #f0f0f0;
+	display: none;
+	text-align: left;
+	padding: 10px 5px;
+	position: relative;
+}
+
+.test_td{
+	height: 0 !important;
+}
+
+.user-table__procent{
+	width: 50px;
+	display: inline-block;
+}
+
+.user-table__email{
+	width: 200px;
+	display: inline-block;
+}
+
+.user-table__save{
+	cursor: pointer;
+}
+
+.g-table__child-row:nth-of-type(2n) > .g-link__usr {
+	color: #ccc;
+
+	&:hover{
+		color: #93cbff;
+	}
+}
+
+.users_list__save{
+	position: absolute;
+	top: 38px;
+	cursor: pointer;
+	right: 34px;
+}
+
+.user-table__add-user{
+	position: relative;
+	&:before{
+		content: '';
+		display: block;
+		width: 22px;
+		height: 13px;
+		background: url('../img/referal.png') center center / contain;
+		margin-left: -5px;
+	}
+}
+
+.users_list__avatar{
+	width: 81px;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.users_list__avatar_delete{
+	position: absolute;
+	bottom: -20px;
+	transition: bottom .8s, line-height 1s;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	left: 0;
+
+	&:hover{
+		line-height: 30px;
+	}
+}
+
+.users__link-in{
+	color: #6ba3e7;
+	text-decoration: none;
+
+	&:hover{
+		color: #6ba3e7;
+	}
+}
+
+.user__avatar{
+	position: relative;
+	height: 81px;
+	margin: 0 auto;
+	cursor: pointer;
+	text-align: center;
+
+	&:hover > .users_list__avatar_delete{
+		bottom: 0px;
+	}
+}
+
+.user-table__status{
+	width: 145px;
+}
+
+.user-table__email-cell{
+	overflow: hidden;
+	max-width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

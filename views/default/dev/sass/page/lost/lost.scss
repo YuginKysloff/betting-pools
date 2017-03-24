@@ -1,0 +1,15 @@
+.lost__error{
+	border-top: 2px solid $red;
+	text-align: left;
+	color: #f95b45;
+	position: relative;
+
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		@include fa ($fa-exclamation-triangle, $red);
+	}
+}

@@ -1,0 +1,72 @@
+.g-error-message{
+	width: 697px;
+	height: 344px;
+	background: transparent url('../img/error_block.png') left top no-repeat;
+	margin: 40px auto;
+	position: relative;
+}
+
+.g-error-message__icon{
+	display: inline-block;
+	position: absolute;
+	top: 21px;
+	left: 21px;
+	width: 164px;
+	height: 164px;
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 80px;
+		color: #f7b2ab;
+		vertical-align: middle;
+	}
+
+	&--blocked{
+		&:before{
+			@include fa ($fa-user-times);
+		}
+	}
+
+	&--access{
+		&:before{
+			@include fa ($fa-times);
+		}
+	}
+	&--data{
+		&:before{
+			@include fa ($fa-exclamation-triangle);
+		}
+	}
+	&--maintenance{
+		&:before{
+			@include fa ($fa-wrench);
+		}
+	}
+}
+
+.g-error-message__title{
+	font-size: 35px;
+	color: #fff;
+	display: inline-block;
+	text-transform: lowercase;
+	font-weight: bold;
+	position: absolute;
+	top: 54px;
+	left: 255px; 
+	width: 438px;
+}
+
+.g-error-message__description{
+	font-size: 15px;
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	top: 154px;
+	left: 347px; 
+	width: 345px;
+	text-align: left;
+}

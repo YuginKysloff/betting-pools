@@ -1,0 +1,21 @@
+.g-h1{
+	font-size: 45px;
+	position: relative;
+	display: inline-block;
+
+	&::first-letter{
+		color: #ec5144;
+	}
+
+	&:after{
+		position: absolute;
+		content: '';
+		display: block;
+		position: absolute;
+		width: 33%;
+		height: 2px;
+		background: #ec5144;
+		bottom: 0px;
+		left: 0px;
+	}
+}

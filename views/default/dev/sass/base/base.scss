@@ -1,0 +1,67 @@
+html,
+body {
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    width: auto;
+    min-width: $MIN-WIDTH;
+    text-align: center;
+    font-family: $BASE__FONT;
+    font-weight: normal;
+    color: $BASE__COLOR;
+    background:#eee url('../img/bg.png');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+//Выключаем прелоадер
+.preloader{
+	display: none;
+}
+
+//глобальные классы
+.g-error {
+    color: red !important;
+}
+
+.g-grey {
+    color: #5a5a5a !important;
+}
+
+.g-red {
+    color: #ec5144 !important;
+}
+
+.g-blue {
+    color: blue !important;
+}
+
+.g-black {
+    color: #000 !important;
+}
+.g-darkred {
+    color: #7b0d03 !important;
+}
+.g-green {
+    color: green !important;
+}
+
+.g-success{
+    color: green !important;
+}
+
+.g-paid{
+    color: #ec5144 !important;
+}
+
+.g-danied{
+    color: #ff0000 !important;
+}
+
+.g-wait{
+    color: #7d7d7c !important;
+}

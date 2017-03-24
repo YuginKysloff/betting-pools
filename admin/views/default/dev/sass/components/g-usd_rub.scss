@@ -1,0 +1,18 @@
+.g-usd{
+	position: relative;
+
+	&:after{
+		content: '';
+		display: inline-block;
+		@include fa ($fa-usd, #464646);
+	}
+}
+.g-rub{
+	position: relative;
+
+	&:after{
+		content: '';
+		display: inline-block;
+		@include fa ($fa-rub, #464646);
+	}
+}

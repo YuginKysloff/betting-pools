@@ -1,0 +1,117 @@
+// @include bounceIn(
+//     $duration: 1s,
+//     $count: 2,
+//     $delay: .2s,
+//     $function: ease, 
+//     $fill: both
+// );
+
+@import
+  "animate.css/properties";
+
+@import
+//attention-seekers
+  // "animate.css/attention-seekers/bounce.scss",
+  // "animate.css/attention-seekers/flash.scss",
+  // "animate.css/attention-seekers/jello.scss",
+  // "animate.css/attention-seekers/pulse.scss",
+  // "animate.css/attention-seekers/rubberBand.scss",
+  // "animate.css/attention-seekers/shake.scss",
+  // "animate.css/attention-seekers/swing.scss",
+  // "animate.css/attention-seekers/tada.scss",
+  // "animate.css/attention-seekers/wobble.scss",
+
+//bouncing-entrances
+  // "animate.css/bouncing-entrances/bounceIn.scss",
+  // "animate.css/bouncing-entrances/bounceInDown.scss",
+  // "animate.css/bouncing-entrances/bounceInLeft.scss",
+  // "animate.css/bouncing-entrances/bounceInRight.scss",
+  // "animate.css/bouncing-entrances/bounceInUp.scss",
+
+//bouncing-exits
+  // "animate.css/bouncing-exits/bounceOut.scss",
+  // "animate.css/bouncing-exits/bounceOutDown.scss",
+  // "animate.css/bouncing-exits/bounceOutLeft.scss",
+  // "animate.css/bouncing-exits/bounceOutRight.scss",
+  // "animate.css/bouncing-exits/bounceOutUp.scss",
+
+//fading-entrances
+  // "animate.css/fading-entrances/fadeIn.scss",
+  // "animate.css/fading-entrances/fadeInDown.scss",
+  // "animate.css/fading-entrances/fadeInDownBig.scss",
+  // "animate.css/fading-entrances/fadeInLeft.scss",
+  // "animate.css/fading-entrances/fadeInLeftBig.scss",
+  // "animate.css/fading-entrances/fadeInRight.scss",
+  // "animate.css/fading-entrances/fadeInRightBig.scss",
+  "animate.css/fading-entrances/fadeInUp.scss",
+  // "animate.css/fading-entrances/fadeInUpBig.scss",
+
+//fading-exits
+  // "animate.css/fading-exits/fadeOut.scss",
+  // "animate.css/fading-exits/fadeOutDown.scss",
+  // "animate.css/fading-exits/fadeOutDownBig.scss",
+  // "animate.css/fading-exits/fadeOutLeft.scss",
+  // "animate.css/fading-exits/fadeOutLeftBig.scss",
+  // "animate.css/fading-exits/fadeOutRight.scss",
+  // "animate.css/fading-exits/fadeOutRightBig.scss",
+  // "animate.css/fading-exits/fadeOutUp.scss",
+  // "animate.css/fading-exits/fadeOutUpBig.scss",
+
+//flippers
+  // "animate.css/flippers/flip.scss",
+  // "animate.css/flippers/flipInX.scss",
+  //"animate.css/flippers/flipInY.scss",
+  //"animate.css/flippers/flipOutX.scss",
+  //"animate.css/flippers/flipOutY.scss",
+
+//lightspeed
+  // "animate.css/lightspeed/lightSpeedIn.scss",
+  // "animate.css/lightspeed/lightSpeedOut.scss",
+
+//rotating-entrances
+  // "animate.css/rotating-entrances/rotateIn.scss",
+  // "animate.css/rotating-entrances/rotateInDownLeft.scss",
+  // "animate.css/rotating-entrances/rotateInDownRight.scss",
+  // "animate.css/rotating-entrances/rotateInUpLeft.scss",
+  // "animate.css/rotating-entrances/rotateInUpRight.scss",
+
+//rotating-exits
+  // "animate.css/rotating-exits/rotateOut.scss",
+  // "animate.css/rotating-exits/rotateOutDownLeft.scss",
+  // "animate.css/rotating-exits/rotateOutDownRight.scss",
+  // "animate.css/rotating-exits/rotateOutUpLeft.scss",
+  // "animate.css/rotating-exits/rotateOutUpRight.scss",
+
+//sliding-entrances
+  // "animate.css/sliding-entrances/slideInDown.scss",
+  // "animate.css/sliding-entrances/slideInLeft.scss",
+  // "animate.css/sliding-entrances/slideInRight.scss",
+  // "animate.css/sliding-entrances/slideInUp.scss",
+
+//sliding-exits
+  // "animate.css/sliding-exits/slideOutDown.scss",
+  // "animate.css/sliding-exits/slideOutLeft.scss",
+  // "animate.css/sliding-exits/slideOutRight.scss",
+  // "animate.css/sliding-exits/slideOutUp.scss",
+
+//specials
+  // "animate.css/specials/hinge.scss",
+  // "animate.css/specials/rollIn.scss",
+  // "animate.css/specials/rollOut.scss",
+
+//zooming-entrances
+  // "animate.css/zooming-entrances/zoomIn.scss",
+  "animate.css/zooming-entrances/zoomInDown.scss",
+  // "animate.css/zooming-entrances/zoomInLeft.scss",
+  // "animate.css/zooming-entrances/zoomInRight.scss",
+  // "animate.css/zooming-entrances/zoomInUp.scss",
+
+//zooming-exits
+  // "animate.css/zooming-exits/zoomOut.scss",
+  // "animate.css/zooming-exits/zoomOutDown.scss",
+  // "animate.css/zooming-exits/zoomOutLeft.scss",
+  // "animate.css/zooming-exits/zoomOutRight.scss",
+  // "animate.css/zooming-exits/zoomOutUp.scss",
+
+
+"animate.css/last.scss";

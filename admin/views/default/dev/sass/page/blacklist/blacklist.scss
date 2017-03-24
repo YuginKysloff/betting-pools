@@ -1,0 +1,42 @@
+.blacklist__input{
+	display: inline-block;
+	width: 200px;
+	position: relative;
+
+	.fa-times{
+		position: absolute;
+		right: 7px;
+		top: 12px;
+	}
+}
+
+.blacklist-wrap{
+	background: #fff;
+	text-align: left;
+	padding: 10px 5px;
+}
+
+.blacklist__title{
+	display: block;
+	margin: 0 auto;
+	width: 320px;
+	text-align: center;
+}
+.blacklist__search-bar{
+	text-align: left;
+}
+
+.blacklist__login,
+.blacklist__ip{
+	max-width: 100%;
+	margin-bottom: 20px;
+	
+	@include bp (md) {
+		width: 48%;
+	}
+}
+
+.blacklist__ip{
+	float: left;
+}
+

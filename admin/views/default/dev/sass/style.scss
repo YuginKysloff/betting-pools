@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+//Выгружаем библиотеки проекта
+@import 'libs/*.scss';
+@import 'libs/vendor/*.scss';
+
+//Выгружаем базовые стили
+@import 'base/mixin/*.scss';
+@import 'base/*.scss';
+
+//Выгружаем глобальные компоненты
+@import 'components/**/*.scss';
+
+//Выгружаем компоненты страниц
+@import 'page/**/*.scss';

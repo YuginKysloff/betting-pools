@@ -1,0 +1,60 @@
+.account__left-sitebar{
+	width: 500px;
+	height: 575px;
+	background: url('../img/account_block.png') no-repeat left top;
+	padding-top: 1px;
+	float: left;
+}
+
+.account__row{
+	margin-bottom: 10px;
+
+	&--one{
+		margin-top: 44px;
+	}
+
+	&--two{
+		margin-top: 96px;
+	}
+
+	&--three{
+		margin-top: 77px;
+	}
+	&--four{
+		margin-top: 77px;
+	}
+}
+
+.account__key{
+	display: block;
+	float: left;
+	width: 236px;
+	padding-left: 36px;
+}
+
+.account__value{
+	text-align: center;
+}
+
+.account__right-sitebar{
+	width: 500px;
+	text-align: center;
+	float: right;
+}
+
+.account__new-password{
+	display: inline-block;
+	width: 100%;
+}
+.account__new-password-title{
+	display: inline-block;
+	width: 200px;
+	font-size: 20px;
+	text-transform: uppercase;
+
+	&+div{
+		display: inline-block;
+		max-width: 250px;
+		vertical-align: middle;
+	}
+}

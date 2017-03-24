@@ -1,0 +1,275 @@
+.menu__wrapper{
+	@include clear;
+	min-height: 1380px;
+	height: calc(100% - 95px);
+	position: absolute;
+	left: -98px;
+	top: 49px;
+	overflow: hidden;
+	width: 98px;
+	transition: left 1s;
+	@include bp (md) {
+		left: 0px;
+	}
+
+}
+
+.menu{
+	width: 100%;
+	// float: left;
+	display: block;
+	background: url('../img/menu_bg.png');
+	// min-height: calc(100vh - 49px);
+	padding: 15px 0;
+
+	@include bp (md) {
+		display: block;
+	}
+}
+
+.arrow{
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	cursor: pointer;
+	z-index: 333;
+	opacity: .4;
+	transition: opacity .4s, left 1s;
+	@include fa ($fa-arrow-right, green, 50px);
+
+	&--open{
+		@include fa ($fa-arrow-left, green, 50px);
+	}
+
+	&--close{
+		@include fa ($fa-arrow-right, green, 50px);
+	}
+	&:hover{
+		opacity: 1;
+	}
+
+	@include bp (md) {
+		display: none;
+	}
+
+}
+.menu__item{
+	color: #fff;
+	text-decoration: none;
+	text-shadow: -2px -1px 3px rgba(0,0,0,.5);
+	display: block;
+	width: 78px;
+	margin: 0 auto;
+	padding-top: 26px;
+	margin-bottom: 8px;
+	border-radius: 6px;
+	padding-bottom: 16px;
+	font-size: 14px;
+	word-wrap: break-word;
+
+	&:hover{
+		box-shadow: -3px -1px 12px rgba(0,0,0,.3);
+		background: linear-gradient(to bottom, rgba(118,127,140,.8), rgba(59,65,74,.8));
+	}
+
+	&--active{
+		background: linear-gradient(to bottom, rgba(65,71,82,.8), rgba(38,44,50,.8));
+		position: relative;
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+			box-shadow: inset -2px -2px 4px 2px rgba(0,0,0,.2);
+			border-radius: 6px;
+		}
+	}
+}
+
+.menu__icon{
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+//Разделы меню
+.menu__home{
+	.menu__icon{
+		@include sprite ($menu_home);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_home-hover);
+
+		}
+	}
+}
+
+.menu__static{
+	.menu__icon{
+		@include sprite ($menu_static);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_static-hover);
+
+		}
+	}
+}
+
+.menu__pay-out{
+	.menu__icon{
+		@include sprite ($menu_pay-out);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_pay-out-hover);
+
+		}
+	}
+}
+
+.menu__user{
+	.menu__icon{
+		@include sprite ($menu_user);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_user-hover);
+
+		}
+	}
+}
+
+.menu__log{
+	.menu__icon{
+		@include sprite ($menu_log);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_log-hover);
+
+		}
+	}
+}
+
+.menu__whille-list{
+	.menu__icon{
+		@include sprite ($menu_whille-list);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_whille-list-hover);
+
+		}
+	}
+}
+
+.menu__black-list{
+	.menu__icon{
+		@include sprite ($menu_black-list);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_black-list-hover);
+
+		}
+	}
+}
+
+.menu__multi{
+	.menu__icon{
+		@include sprite ($menu_multi);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_multi-hover);
+
+		}
+	}
+}
+
+.menu__security{
+	.menu__icon{
+		@include sprite ($menu_security);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_security-hover);
+
+		}
+	}
+}
+
+.menu__static{
+	.menu__icon{
+		@include sprite ($menu_static);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_static-hover);
+
+		}
+	}
+}
+
+.menu__news{
+	.menu__icon{
+		@include sprite ($menu_news);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_news-hover);
+
+		}
+	}
+}
+
+.menu__setting{
+	.menu__icon{
+		@include sprite ($menu_setting);
+
+	}
+
+	&:hover{
+		.menu__icon{
+			@include sprite ($menu_setting-hover);
+
+		}
+	}
+}	
+
+
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+.stop {
+  position: relative;
+  z-index: 101;
+}

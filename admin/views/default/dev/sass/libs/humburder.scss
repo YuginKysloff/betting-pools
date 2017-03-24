@@ -1,0 +1,73 @@
+$hamburger-padding-x                       : 4px !default;
+$hamburger-padding-y                       : 11px !default;
+$hamburger-layer-width                     : 40px !default;
+$hamburger-layer-height                    : 4px !default;
+$hamburger-layer-spacing                   : 6px !default;
+$hamburger-layer-color                     : #ccc !default;
+$hamburger-layer-border-radius             : 4px !default;
+$hamburger-hover-opacity                   : 0.7 !default;
+$hamburger-hover-transition-duration       : 0.15s !default;
+$hamburger-hover-transition-timing-function: linear !default;
+
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter    : opacity(50%) !default;
+
+$hamburger-types: (
+  // 3dx,
+  // 3dx-r,
+  // 3dy,
+  // 3dy-r,
+  // arrow,
+  // arrow-r,
+  // arrowalt,
+  // arrowalt-r,
+  // boring,
+  // collapse,
+  // collapse-r,
+  // elastic,
+  // elastic-r,
+  // emphatic,
+  // emphatic-r,
+  // slider,
+  // slider-r,
+  // spring,
+  // spring-r,
+  // stand,
+  // stand-r,
+  // spin,
+  // spin-r,
+  squeeze
+  // vortex,
+  // vortex-r
+) !default;
+
+
+@import '../node_modules/hamburgers/_sass/hamburgers/base';
+
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/3dx";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/3dx-r";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/3dy";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/3dy-r";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/arrow";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/arrow-r";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/arrowalt";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/arrowalt-r";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/boring";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/collapse";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/collapse-r";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/elastic";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/elastic-r";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/emphatic";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/emphatic-r";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/slider";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/slider-r";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/spring";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/spring-r";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/stand";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/stand-r";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/spin";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/spin-r";
+@import "../node_modules/hamburgers/_sass/hamburgers/types/squeeze";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/vortex";
+// @import "../node_modules/hamburgers/_sass/hamburgers/types/vortex-r";
+

@@ -1,0 +1,76 @@
+.statistics__registration{
+	max-width: 420px;
+	min-width: 310px;
+	margin: 0 auto;
+	@include clear;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+	background: #fff;
+	border-radius: 4px;
+	@include bp (1013px) {
+		float: right;
+	}
+
+	.g-button{
+		margin: 12px 0;
+	}
+}
+
+.registration__title{
+	display: block;
+	background: linear-gradient(to bottom, #aeaeae, #6f6f6f);
+	color: #fff;
+	text-shadow: 0px 2px 2px #444;
+	height: 56px;
+	font-size: 22px;
+	padding-top: 9px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.registration__list{
+	@include clear;
+	position: relative;
+
+}
+
+.registration__hr-line{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: calc(50% - 1px);
+	width: 1px;
+	height: calc(100% - 20px);
+	background: #e3dee5;
+}
+.registration__item{
+	background: #fff;
+	float: left;
+	width: 50%;
+	text-align: left;
+	padding: 10px 0 0 23px; 
+}
+
+.registration__value{
+	font-size: 18px;
+	color: #00396e;
+	line-height: 50px;
+	&:before{
+		content: '';
+		display: inline-block;
+		@include sprite ($registration_icon);
+		vertical-align: middle;
+		margin-right: 7px;
+	}
+}
+
+.registration__data{
+	color: #bdc3c7;
+	display: inline-block;
+	margin-left: 16px;
+	font-size: 14px;
+}
+
+#statistics__signup{
+	padding-bottom: 5px;
+}

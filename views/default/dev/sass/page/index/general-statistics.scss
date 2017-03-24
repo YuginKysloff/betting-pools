@@ -1,0 +1,77 @@
+.general-statistics{
+	text-align: center;
+}
+
+.general-statistics__item{
+	display: inline-block;
+	width: 351px;
+	height: 198px;
+	background: url('../img/general-statistics_item.png') no-repeat center center;
+	box-sizing: border-box;
+	margin-right: 38px;
+	text-align: left;
+	position: relative;
+
+	&:last-of-type{
+		margin-right: 0px;
+	}
+}
+
+.general-statistics__title,
+.general-statistics__row{
+	display: block;
+}
+
+.general-statistics__title{
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 28px 0 24px 77px;
+}
+
+.general-statistics__row-wrap{
+	display: block;
+	margin: 0 auto;
+	width: 120px
+}
+.general-statistics__row{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 7px;
+}
+
+.general-statistics__icon{
+	display: block;
+	position: absolute;
+	bottom: 45px;
+	left: 44px;
+	width: 10px;
+	height: 10px;
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&--users{
+		&:before{
+			@include fa ($fa-users,#fff, 27px);
+		}
+	}
+
+	&--payin{
+		&:before{
+			@include fa ($fa-database,#fff, 27px);
+		}
+	}
+
+	&--payout{
+		&:before{
+			@include fa ($fa-money,#fff, 27px);
+		}
+	}
+}

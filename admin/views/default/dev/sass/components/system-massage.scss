@@ -1,0 +1,81 @@
+.system-massage{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	width: 230px;
+	overflow: hidden;
+	z-index: 999999;
+}
+
+.system-massage__item{
+	display: block;
+	width: 225px;
+	// height: 0px;
+	padding: 0px 35px 0px 16px;
+	border: 0px solid #fff;
+	float: left;
+	text-align: left;
+	margin-bottom: 6px;
+	position: relative;
+	cursor: pointer;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 12px;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    animation-name: fadeInUp,hide;
+    animation-iteration-count: 1;
+    animation-duration: 1s,1s;
+    animation-delay: 0s,2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    backface-visibility: hidden;
+
+	&--show{
+		height: initial !important;
+	}
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: calc(50% - 8.5px);
+		right: 11px;
+		
+	}
+
+	&[data-type="error"]{
+		background: linear-gradient(to bottom, #fe7373, #d23233);
+		border-color: #ed6364 #e15253 #ca2f31 #da4a4b;
+		&:after{
+			@include sprite ($system-massage_error);
+		}
+	}
+	&[data-type="success"]{
+		background: linear-gradient(to bottom, #8ce084, #4eb147);
+		border-color: #6dc266 #61b85b #3d9d38 #49a644;
+		&:after{
+			@include sprite ($system-massage_succes);
+		}
+		
+	}
+	&[data-type="wait"]{
+		background: linear-gradient(to bottom, #fed956, #d2a712);
+		border-color: #ffcd45 #ffcd45 #ffcd45 #ffcd45;
+		&:after{
+			@include sprite ($system-massage_wait);
+		}
+		
+	}
+}
+.block{
+	display: none;
+}
+
+@keyframes hide{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}

@@ -1,0 +1,18 @@
+.recomend__block{
+}
+
+.recomend__item{
+	display: inline-block;
+	margin-right: 131px;
+	float: left;
+	filter: grayscale(100%);
+	transition: filter .5s;
+
+	&:hover{
+		filter: grayscale(0%);
+	}
+
+	&:nth-of-type(4){
+		margin-right: 0;
+	}
+}

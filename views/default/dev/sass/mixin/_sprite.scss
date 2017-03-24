@@ -1,0 +1,305 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$advcash-name: 'advcash';
+$advcash-x: 164px;
+$advcash-y: 67px;
+$advcash-offset-x: -164px;
+$advcash-offset-y: -67px;
+$advcash-width: 26px;
+$advcash-height: 26px;
+$advcash-total-width: 252px;
+$advcash-total-height: 166px;
+$advcash-image: '../img/sprite.png';
+$advcash: (164px, 67px, -164px, -67px, 26px, 26px, 252px, 166px, '../img/sprite.png', 'advcash', );
+$deposit-rub-name: 'deposit_rub';
+$deposit-rub-x: 0px;
+$deposit-rub-y: 139px;
+$deposit-rub-offset-x: 0px;
+$deposit-rub-offset-y: -139px;
+$deposit-rub-width: 22px;
+$deposit-rub-height: 27px;
+$deposit-rub-total-width: 252px;
+$deposit-rub-total-height: 166px;
+$deposit-rub-image: '../img/sprite.png';
+$deposit-rub: (0px, 139px, 0px, -139px, 22px, 27px, 252px, 166px, '../img/sprite.png', 'deposit_rub', );
+$deposit-usd-name: 'deposit_usd';
+$deposit-usd-x: 32px;
+$deposit-usd-y: 139px;
+$deposit-usd-offset-x: -32px;
+$deposit-usd-offset-y: -139px;
+$deposit-usd-width: 22px;
+$deposit-usd-height: 27px;
+$deposit-usd-total-width: 252px;
+$deposit-usd-total-height: 166px;
+$deposit-usd-image: '../img/sprite.png';
+$deposit-usd: (32px, 139px, -32px, -139px, 22px, 27px, 252px, 166px, '../img/sprite.png', 'deposit_usd', );
+$hr-img-name: 'hr_img';
+$hr-img-x: 102px;
+$hr-img-y: 0px;
+$hr-img-offset-x: -102px;
+$hr-img-offset-y: 0px;
+$hr-img-width: 52px;
+$hr-img-height: 39px;
+$hr-img-total-width: 252px;
+$hr-img-total-height: 166px;
+$hr-img-image: '../img/sprite.png';
+$hr-img: (102px, 0px, -102px, 0px, 52px, 39px, 252px, 166px, '../img/sprite.png', 'hr_img', );
+$log-name: 'log';
+$log-x: 98px;
+$log-y: 112px;
+$log-offset-x: -98px;
+$log-offset-y: -112px;
+$log-width: 21px;
+$log-height: 17px;
+$log-total-width: 252px;
+$log-total-height: 166px;
+$log-image: '../img/sprite.png';
+$log: (98px, 112px, -98px, -112px, 21px, 17px, 252px, 166px, '../img/sprite.png', 'log', );
+$logo-advcash-hover-name: 'logo_advcash-hover';
+$logo-advcash-hover-x: 0px;
+$logo-advcash-hover-y: 0px;
+$logo-advcash-hover-offset-x: 0px;
+$logo-advcash-hover-offset-y: 0px;
+$logo-advcash-hover-width: 92px;
+$logo-advcash-hover-height: 20px;
+$logo-advcash-hover-total-width: 252px;
+$logo-advcash-hover-total-height: 166px;
+$logo-advcash-hover-image: '../img/sprite.png';
+$logo-advcash-hover: (0px, 0px, 0px, 0px, 92px, 20px, 252px, 166px, '../img/sprite.png', 'logo_advcash-hover', );
+$logo-advcash-name: 'logo_advcash';
+$logo-advcash-x: 0px;
+$logo-advcash-y: 30px;
+$logo-advcash-offset-x: 0px;
+$logo-advcash-offset-y: -30px;
+$logo-advcash-width: 92px;
+$logo-advcash-height: 20px;
+$logo-advcash-total-width: 252px;
+$logo-advcash-total-height: 166px;
+$logo-advcash-image: '../img/sprite.png';
+$logo-advcash: (0px, 30px, 0px, -30px, 92px, 20px, 252px, 166px, '../img/sprite.png', 'logo_advcash', );
+$logo-payeer-hover-name: 'logo_payeer-hover';
+$logo-payeer-hover-x: 0px;
+$logo-payeer-hover-y: 112px;
+$logo-payeer-hover-offset-x: 0px;
+$logo-payeer-hover-offset-y: -112px;
+$logo-payeer-hover-width: 88px;
+$logo-payeer-hover-height: 17px;
+$logo-payeer-hover-total-width: 252px;
+$logo-payeer-hover-total-height: 166px;
+$logo-payeer-hover-image: '../img/sprite.png';
+$logo-payeer-hover: (0px, 112px, 0px, -112px, 88px, 17px, 252px, 166px, '../img/sprite.png', 'logo_payeer-hover', );
+$logo-payeer-name: 'logo_payeer';
+$logo-payeer-x: 164px;
+$logo-payeer-y: 0px;
+$logo-payeer-offset-x: -164px;
+$logo-payeer-offset-y: 0px;
+$logo-payeer-width: 88px;
+$logo-payeer-height: 17px;
+$logo-payeer-total-width: 252px;
+$logo-payeer-total-height: 166px;
+$logo-payeer-image: '../img/sprite.png';
+$logo-payeer: (164px, 0px, -164px, 0px, 88px, 17px, 252px, 166px, '../img/sprite.png', 'logo_payeer', );
+$logo-pm-hover-name: 'logo_pm-hover';
+$logo-pm-hover-x: 0px;
+$logo-pm-hover-y: 86px;
+$logo-pm-hover-offset-x: 0px;
+$logo-pm-hover-offset-y: -86px;
+$logo-pm-hover-width: 104px;
+$logo-pm-hover-height: 16px;
+$logo-pm-hover-total-width: 252px;
+$logo-pm-hover-total-height: 166px;
+$logo-pm-hover-image: '../img/sprite.png';
+$logo-pm-hover: (0px, 86px, 0px, -86px, 104px, 16px, 252px, 166px, '../img/sprite.png', 'logo_pm-hover', );
+$logo-pm-name: 'logo_pm';
+$logo-pm-x: 0px;
+$logo-pm-y: 60px;
+$logo-pm-offset-x: 0px;
+$logo-pm-offset-y: -60px;
+$logo-pm-width: 104px;
+$logo-pm-height: 16px;
+$logo-pm-total-width: 252px;
+$logo-pm-total-height: 166px;
+$logo-pm-image: '../img/sprite.png';
+$logo-pm: (0px, 60px, 0px, -60px, 104px, 16px, 252px, 166px, '../img/sprite.png', 'logo_pm', );
+$my-profille-name: 'my-profille';
+$my-profille-x: 64px;
+$my-profille-y: 139px;
+$my-profille-offset-x: -64px;
+$my-profille-offset-y: -139px;
+$my-profille-width: 17px;
+$my-profille-height: 19px;
+$my-profille-total-width: 252px;
+$my-profille-total-height: 166px;
+$my-profille-image: '../img/sprite.png';
+$my-profille: (64px, 139px, -64px, -139px, 17px, 19px, 252px, 166px, '../img/sprite.png', 'my-profille', );
+$pay-in-name: 'pay_in';
+$pay-in-x: 114px;
+$pay-in-y: 60px;
+$pay-in-offset-x: -114px;
+$pay-in-offset-y: -60px;
+$pay-in-width: 23px;
+$pay-in-height: 16px;
+$pay-in-total-width: 252px;
+$pay-in-total-height: 166px;
+$pay-in-image: '../img/sprite.png';
+$pay-in: (114px, 60px, -114px, -60px, 23px, 16px, 252px, 166px, '../img/sprite.png', 'pay_in', );
+$pay-out-name: 'pay_out';
+$pay-out-x: 200px;
+$pay-out-y: 103px;
+$pay-out-offset-x: -200px;
+$pay-out-offset-y: -103px;
+$pay-out-width: 19px;
+$pay-out-height: 22px;
+$pay-out-total-width: 252px;
+$pay-out-total-height: 166px;
+$pay-out-image: '../img/sprite.png';
+$pay-out: (200px, 103px, -200px, -103px, 19px, 22px, 252px, 166px, '../img/sprite.png', 'pay_out', );
+$payeer-name: 'payeer';
+$payeer-x: 164px;
+$payeer-y: 103px;
+$payeer-offset-x: -164px;
+$payeer-offset-y: -103px;
+$payeer-width: 26px;
+$payeer-height: 26px;
+$payeer-total-width: 252px;
+$payeer-total-height: 166px;
+$payeer-image: '../img/sprite.png';
+$payeer: (164px, 103px, -164px, -103px, 26px, 26px, 252px, 166px, '../img/sprite.png', 'payeer', );
+$pm-name: 'pm';
+$pm-x: 200px;
+$pm-y: 67px;
+$pm-offset-x: -200px;
+$pm-offset-y: -67px;
+$pm-width: 26px;
+$pm-height: 26px;
+$pm-total-width: 252px;
+$pm-total-height: 166px;
+$pm-image: '../img/sprite.png';
+$pm: (200px, 67px, -200px, -67px, 26px, 26px, 252px, 166px, '../img/sprite.png', 'pm', );
+$pull-rub-name: 'pull_rub';
+$pull-rub-x: 203px;
+$pull-rub-y: 27px;
+$pull-rub-offset-x: -203px;
+$pull-rub-offset-y: -27px;
+$pull-rub-width: 29px;
+$pull-rub-height: 30px;
+$pull-rub-total-width: 252px;
+$pull-rub-total-height: 166px;
+$pull-rub-image: '../img/sprite.png';
+$pull-rub: (203px, 27px, -203px, -27px, 29px, 30px, 252px, 166px, '../img/sprite.png', 'pull_rub', );
+$pull-usd-name: 'pull_usd';
+$pull-usd-x: 164px;
+$pull-usd-y: 27px;
+$pull-usd-offset-x: -164px;
+$pull-usd-offset-y: -27px;
+$pull-usd-width: 29px;
+$pull-usd-height: 30px;
+$pull-usd-total-width: 252px;
+$pull-usd-total-height: 166px;
+$pull-usd-image: '../img/sprite.png';
+$pull-usd: (164px, 27px, -164px, -27px, 29px, 30px, 252px, 166px, '../img/sprite.png', 'pull_usd', );
+$referals-name: 'referals';
+$referals-x: 229px;
+$referals-y: 103px;
+$referals-offset-x: -229px;
+$referals-offset-y: -103px;
+$referals-width: 20px;
+$referals-height: 19px;
+$referals-total-width: 252px;
+$referals-total-height: 166px;
+$referals-image: '../img/sprite.png';
+$referals: (229px, 103px, -229px, -103px, 20px, 19px, 252px, 166px, '../img/sprite.png', 'referals', );
+$signup-name: 'signup';
+$signup-x: 114px;
+$signup-y: 86px;
+$signup-offset-x: -114px;
+$signup-offset-y: -86px;
+$signup-width: 20px;
+$signup-height: 16px;
+$signup-total-width: 252px;
+$signup-total-height: 166px;
+$signup-image: '../img/sprite.png';
+$signup: (114px, 86px, -114px, -86px, 20px, 16px, 252px, 166px, '../img/sprite.png', 'signup', );
+$spritesheet-width: 252px;
+$spritesheet-height: 166px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($advcash, $deposit-rub, $deposit-usd, $hr-img, $log, $logo-advcash-hover, $logo-advcash, $logo-payeer-hover, $logo-payeer, $logo-pm-hover, $logo-pm, $my-profille, $pay-in, $pay-out, $payeer, $pm, $pull-rub, $pull-usd, $referals, $signup, );
+$spritesheet: (252px, 166px, '../img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

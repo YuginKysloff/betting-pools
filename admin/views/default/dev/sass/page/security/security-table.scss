@@ -1,0 +1,25 @@
+.security-table__wrap{
+	overflow-x: auto;
+	width: 100%;
+	overflow-y: hidden;
+}
+
+.security-table{
+	min-width: 861px;
+}
+
+.security-table__comments{
+	width: 40%;
+	padding: 10px 0;
+	text-align: left;
+
+	&--warning{
+		position: relative;
+		&:before{
+			content: '';
+			display: inline-block;
+			margin-right: 3px;
+			@include fa ($fa-exclamation-triangle, red, 13px);
+		}
+	}
+}
